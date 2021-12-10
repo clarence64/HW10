@@ -1,0 +1,23 @@
+import sys
+import time
+import Rpi.GPIO as GPIO
+
+from PyQt5.QtWidgets import (QApplication, QHBoxLayout, QMainWindow, QLabel, QPushButton, QVBoxLayout, QWidget)
+from PyQt5.QtCore import Qt
+
+GPIO.setmode(GPIO.BCM)
+pin = 18
+GPIO.setup(pin, GPIO.OUT)
+
+class Main(QMainWindow):
+  
+
+
+
+
+
+if __name__ == '__main__':
+  st = QApplication(sys.argv)
+  win = Main()
+  win.show()
+  st.exec_()
